@@ -10,5 +10,6 @@ peticion.then( (resp) => resp.json() )
     img.src = url;
 
     document.body.append( img )
+    console.log(' consola ');
 } )
 .catch( console.warn );
