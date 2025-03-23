@@ -10,6 +10,6 @@ peticion.then( (resp) => resp.json() )
     img.src = url;
 
     document.body.append( img )
-    console.log(' mensaje de consola modificado ');
+    console.log(' mensaje de consola modificado, desde la rama main ');
 } )
 .catch( console.warn );
