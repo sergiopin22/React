@@ -6,6 +6,5 @@ import { FirstApp } from './FirtsApp';
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
         <FirstApp/>
-        <HelloWorldApp/>
     </React.StrictMode>
 )
