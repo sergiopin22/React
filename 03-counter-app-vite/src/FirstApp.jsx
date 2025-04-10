@@ -9,15 +9,16 @@ const newMessage = {
     message: 'Hola Mundo',
     title: 'Alejandro Pinzon'
 };
-export const FirstApp = ({ title, subTitle }) => {
+export const FirstApp = ({ title, subTitle, name }) => {
     // console.log(props);
 
     return (
         <>
             {/* <h1> { getSaludo() } </h1> */}
             {/* {<code> { JSON.stringify(newMessage) } </code>} */}
-            <h1> {title}</h1>
+            <h1>{ title }</h1>
             <p>{subTitle}</p>
+            <p>{name}</p>
         </>
     )
 }
