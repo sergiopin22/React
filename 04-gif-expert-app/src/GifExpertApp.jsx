@@ -3,7 +3,7 @@ import { AddCategory } from "./components/AddCategory";
 
 export const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState(['Death note', 'One Piece']);
+    const [categories, setCategories] = useState(['Death note', 'One Piece', 'One Punch-Man']);
 
     const onAddCategory = () => {
         //Black Clover
