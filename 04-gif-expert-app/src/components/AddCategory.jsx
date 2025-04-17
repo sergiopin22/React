@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export const AddCategory = ({ setCategories }) => {
+export const AddCategory = ({ onNewCategory }) => {
 
     const [inputValue, setInputValue] = useState('Boku no hero');
 
@@ -11,14 +11,16 @@ export const AddCategory = ({ setCategories }) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        if( inputValue.trim().length <=1) return;
+        const inputTrim = inputValue.trim();
+        if( inputTrim.length <=1) return;
         
-        setCategories( categories => [inputValue, ...categories] )
+        // setCategories( categories => [inputValue, ...categories] )
+        onNewCategory( inputTrim );
         setInputValue('');
     }
 
     return (
-        <form onSubmit={ (event) => onSubmit(event) }>
+        <form onSubmit={ (value) => onSubmit(event) }>
             <input
                 type="text"
                 placeholder='Buscar Gifs'
