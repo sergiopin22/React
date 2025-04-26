@@ -15,7 +15,8 @@ export const GifExpertApp = () => {
     return (
         <>
 
-            <h1>GifExpertApp</h1>
+            <h1>GifExpertApp Web</h1>
+            <p>Pagina web que extrae Gifs de Giphy</p>
 
             <AddCategory
 
